@@ -1,0 +1,51 @@
+<%- contentFor('hero')%>
+<section class="hero">
+	<div class="hero-content">
+		<h2>Pedidos</h2>
+		<p>Escolha seu hambúrguer e peça por aqui mesmo!</p>
+
+	</div>
+</section>
+	
+<%- contentFor('body') %>
+<div class="jumbotron text-center">
+	<h2>Faça um pedido!</h2>
+	<form action="/order" method="POST">
+	<table>
+			<% for (product of products) { %>
+			<tr align="left">
+				<td rowspan="2">
+					<img class="product-image" src="<%= product.foto%>" alt="" class="img-responsive">
+				</td>
+				<td><%= product.name %></td>
+				<td rowspan="2">
+					<span><%= product.preco %></span>
+					
+					<select name="<%=product.id%>">
+					<option value="0">0</option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="10">10</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td align="left" ><span class="definition-text" ><%= product.defi %></span></td>
+			</tr>
+			<% } %>
+	</table>
+	<div align="right">
+		<button type="submit" class="btn btn-primary btn-lg">Finalizar Pedido</button>
+	</div>
+	</form>
+	<div class="col">
+		
+	</div>
+</div>

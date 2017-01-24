@@ -8,9 +8,25 @@ header .navbar{
 	margin: 0;
 }
 
+table{
+	 width: 100%;
+}
+.product-image{
+	width: 50px;
+	height: 50px;
+
+}
+
+.definition-text{
+	font-size: 15px;
+}
+
 .navbar-logo{
-	background-image: url(../img/logo.png);
+	width: 50px;
+	height: 50px;
 	object-fit: contain;
+	margin: 0px;
+	padding:0px;
 }
 
 .hero{
@@ -33,19 +49,36 @@ header .navbar{
 .hero-content h2{
 	color: #FFF;
 	font-size: 80px;
+	-webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
 }
 
 .hero-content p{
 	color: #FFF;
-	font-size: 40px;
+	font-size: 50px;
 	margin-bottom: 30px;
+	-webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
 }
 
 .hero-content .btn{
+	border-color: #004d00;
+	background-color: #a5682a;
+	color: #004d00;
 	border-radius: 2px;
 	padding: 20px 30px;
 }
 
+main {
+	min-height: 500px;
+	padding: 50px 0;
+}
+
 footer {
-	font-family: "Times New Roman", Times, serif;
+	padding: 30px 0;
+	font-size: 14px;
+	color: #BBB;
+	background: #222;
+	text-align: center;
+	/*font-family: "Times New Roman", Times, serif;*/
 }

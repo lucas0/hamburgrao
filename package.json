@@ -10,7 +10,10 @@
   "author": "Lucas Azevedo",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.16.0",
+    "ejs": "^2.5.5",
     "express": "^4.14.0",
+    "express-ejs-layouts": "^2.2.0",
     "nodemon": "^1.11.0"
   },
   "repository": {

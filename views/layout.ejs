@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Hamburgrao</title>
+
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="/css/styles.css">
+</head>
+<body>
+	<header>
+		<nav class="navbar navbar-inverse">		
+			<a href="/"><img class="navbar-logo navbar-brand" src="../img/logo.png"></a>
+			<ul class="nav navbar-nav">
+				<li><a href="/" class="home">Inicial</a></li>
+				<li><a href="/about">Sobre</a></li>
+				<li><a href="/order">Pedidos</a></li>
+				<li><a href="/contact">Contato</a></li>		
+			</ul>
+		</nav>	
+	</header>
+
+
+<!-- MAIN CONTENT HERE -->
+<%- defineContent('hero') %>
+<main>
+	<div class="container">
+		<%- body %>
+	</div>
+</main>
+
+	<footer>
+		Hamburgrão &copy; 2017 
+	</footer>
+</body>
+</html>
